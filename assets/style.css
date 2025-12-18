@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+ 
+}
+
+.login .container{
+      width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    background: #000000;
+    color: white;
+    height: 500px;
+    border-radius: 20px;
+    border: red 4px dotted;
+}
+
+.login  .container input   {
+font-size: larger;
+        width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+} 
+
+
+.login  .container  button {
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 50%;
+    margin: 0 auto;
+ }
+.login .container .login-form {
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* contact  page */
+
+
+ 
+.contact  input , select, textarea  
+ {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+ .contact  input[type=submit] , .logout {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 50px;
+}
+
+ .contact  input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact  .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/* accordion styles */
+
+ 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+ 
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* Message styles */
+.message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    animation: fadeOut 3s forwards;
+}
+
+.error-message {
+    background-color: #f44336;
+    color: white;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Table styles - simple and clean */
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+table th {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  font-weight: bold;
+}
+
+table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Contact header buttons */
+.contact-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-header button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-header button:hover {
+  background-color: #f5f5f5;
+}
+
+.contact-header button a {
+  text-decoration: none;
+  color: #333;
+}
