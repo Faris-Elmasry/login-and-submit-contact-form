@@ -31,8 +31,8 @@ $userData = $user->getuser();
             <p>Password: <?php echo htmlspecialchars($cookie_password); ?></p>
             
             <br>
-            <button><a href="index.php">Back to Login</a></button>
-            <button><a href="contact.php">Go to Contact</a></button>
+            <button><a href="../index.php">Back to Login</a></button>
+            <button><a href="../pages/contact.php">Go to Contact</a></button>
         </div>
     </div>
 </body>

@@ -66,7 +66,7 @@ font-size: larger;
   resize: vertical;
 }
 
- .contact  input[type=submit] , .logout {
+ .contact  input[type=submit] , .logout  ,button{
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -172,21 +172,26 @@ table tr:hover {
   text-align: center;
 }
 
+ 
 .contact-header button {
-  padding: 10px 20px;
-  margin: 5px;
-  border: 1px solid #ddd;
-  background-color: white;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 14px;
+ 
+    border-radius: 4px;
+    font-size: 14px;
 }
-
-.contact-header button:hover {
-  background-color: #f5f5f5;
+.contact-header button:hover ,button a:hover {
+  background-color: #000000;
+  color: white;
 }
-
-.contact-header button a {
+.contact-header button a{
   text-decoration: none;
-  color: #333;
+ 
+}
+.logout {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 50px;
 }

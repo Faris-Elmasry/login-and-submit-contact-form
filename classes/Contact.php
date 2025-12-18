@@ -1,7 +1,7 @@
 <?php
 
 class Contact {
-private $contacts_file = 'contacts.json';
+private $contacts_file = '../data/contacts.json';
 
 private $errors = array();
 

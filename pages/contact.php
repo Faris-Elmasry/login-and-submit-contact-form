@@ -25,39 +25,31 @@ $contact = new Contact();
 
 
 if (isset($_POST['submit_contact'])) {
-
-
-
-  
-    $formaData = array(
+    $formData = array(
         'firstname' => trim($_POST['firstname']),
         'lastname' => trim($_POST['lastname']),
         'country' => $_POST['country'],
         'subject' => trim($_POST['subject']),
         'email' => trim($_POST['email'])
-        );
+    );
 
-  // Validation and sanitization   
-        if ($contact->validate($formaData)) {
- $contact->save($formData);
+    // Validation and sanitization   
+    if ($contact->validate($formData)) {
+        $contact->save($formData);
+        
+        // Set flash message
+        $_SESSION['contact_message'] = "Thank you, {$formData['firstname']} {$formData['lastname']}! Your message has been saved.";
+        header("Location: contact.php");
+        exit();
+    } else {
+        $errors = $contact->getErrors();
+    }
+}
 
-//  
+// Get flash message
 if (isset($_SESSION['contact_message'])) {
     $contact_message = $_SESSION['contact_message'];
     unset($_SESSION['contact_message']);
-    header("Location: contact.php");
-    exit();
-} else {
-        $errors = $contact->getErrors();
-    }
-        }
-            
- 
-     
-    
-   
-   
- 
 }
 
 
